@@ -1,7 +1,7 @@
 const propiedades_alquiler = [
     {
       nombre: 'Casa en la playa',
-      src: 'https://example.com/casa_playa.jpg',
+      src: './assets/img/casa-playa.jpg',
       descripcion: 'Amplia casa frente al mar con jardín privado',
       ubicacion: 'Marbella, Costa del Sol',
       habitaciones: 3,
@@ -12,7 +12,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Apartamento céntrico',
-      src: 'https://example.com/apto_centro.jpg',
+      src: './assets/img/apartamento-centrico.jpg',
       descripcion: 'Moderno departamento totalmente equipado',
       ubicacion: 'Centro de Madrid',
       habitaciones: 2,
@@ -23,7 +23,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Chalet en montaña',
-      src: 'https://example.com/chalet_montana.jpg',
+      src: './assets/img/chalet-montana.jpg',
       descripcion: 'Acogedora cabaña con vista a las montañas',
       ubicacion: 'Pirineos Aragoneses',
       habitaciones: 4,
@@ -34,7 +34,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Loft moderno',
-      src: 'https://example.com/loft_moderno.jpg',
+      src: './assets/img/loft-moderno.avif',
       descripcion: 'Espacio minimalista con diseño contemporáneo',
       ubicacion: 'Barrio de moda en Barcelona',
       habitaciones: 1,
@@ -48,7 +48,7 @@ const propiedades_alquiler = [
   const propiedades_venta = [
     {
       nombre: 'Casa de lujo',
-      src: 'https://example.com/casa_lujo.jpg',
+      src: './assets/img/casa-lujo.avif',
       descripcion: 'Mansión contemporánea con amenities exclusivas',
       ubicacion: 'La Moraleja, Madrid',
       habitaciones: 5,
@@ -59,7 +59,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Apartamento en zona residencial',
-      src: 'https://example.com/apto_residencial.jpg',
+      src: './assets/img/apartamento-residencial.webp',
       descripcion: 'Departamento familiar con áreas comunes',
       ubicacion: 'Valencia Norte',
       habitaciones: 3,
@@ -70,7 +70,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Villa con piscina',
-      src: 'https://example.com/villa_piscina.jpg',
+      src: './assets/img/villa-picina.webp',
       descripcion: 'Propiedad exclusiva con jardín tropical',
       ubicacion: 'Costa Blanca',
       habitaciones: 6,
@@ -81,7 +81,7 @@ const propiedades_alquiler = [
     },
     {
       nombre: 'Estudio en centro histórico',
-      src: 'https://example.com/estudio_historico.jpg',
+      src: './assets/img/estudio-historico.avif',
       descripcion: 'Encantador estudio totalmente renovado',
       ubicacion: 'Centro de Sevilla',
       habitaciones: 1,
