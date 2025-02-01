@@ -1,9 +1,9 @@
-import {propiedades_alquiler} from './data/propiedades.js'
+import {propiedades_venta} from './data/propiedades.js'
 
 const propiedadVenta = document.querySelector('#venta .row')
 
 let html = ''
-for(let propiedad of propiedades_alquiler){
+for(let propiedad of propiedades_venta){
     html += `
         <div class="col-md-4 mb-4">
             <div class="card">
