@@ -1,9 +1,12 @@
-import {propiedades_alquiler} from './data/propiedades.js'
+import { propiedades_venta, propiedades_alquiler } from "./data/propiedades.js";
 
-const propiedadAlquiler = document.querySelector('#alquiler .row')
 
-let html = ''
-for(let propiedad of propiedades_alquiler){
+const propiedadVenta = document.querySelector("#venta .row");
+const propiedadAlquiler = document.querySelector("#alquiler .row");
+
+const pintarCards = (tipoPropiedad, element) => {
+  let html = "";
+  for (let propiedad of tipoPropiedad.slice(0,3)) {
     html += `
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -28,23 +31,27 @@ for(let propiedad of propiedades_alquiler){
                   <i class="fas fa-bath"></i> ${propiedad.banios}
                 </p>
                 <p><i class="fas fa-dollar-sign"></i> ${propiedad.costo}</p>
-                ${propiedad.smoke?`
+                ${
+                  propiedad.smoke
+                    ? `
                     <p class="text-success">
                         <i class="fas fa-smoking"></i> 
                         Permitido fumar
                     </p>`
-                    :`
+                    : `
                     <p class="text-danger">
                         <i class="fas fa-smoking-ban"></i> 
                         No se permite fumar
                     </p>`
                 }
-                ${propiedad.pets?`
+                ${
+                  propiedad.pets
+                    ? `
                     <p class="text-success">
                         <i class="fas fa-paw"></i> 
                         Mascotas permitidas
                     </p>`
-                    :`
+                    : `
                     <p class="text-danger">
                         <i class="fa-solid fa-ban"></i> 
                         No se permiten mascotas
@@ -54,9 +61,11 @@ for(let propiedad of propiedades_alquiler){
               </div>
             </div>
           </div>
-    `
-
+    `;
+  }
+  element.innerHTML += html;
 }
 
-propiedadAlquiler.innerHTML += html;
+pintarCards(propiedades_venta, propiedadVenta)
+pintarCards(propiedades_alquiler, propiedadAlquiler)
 
